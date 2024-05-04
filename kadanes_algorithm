@@ -1,0 +1,15 @@
+a = [-2, -3, 4, -1, -2, 1, 5, -3]
+
+# finding maximum subarray 
+max_i = 0
+max_so_far = 0
+for i in a:
+    max_i += i
+    print(8, max_i)
+    if max_so_far < max_i:
+        print(10, max_so_far, max_i)
+        max_so_far = max_i
+    if max_i < 0:
+        max_i = 0
+    
+print(max_so_far)
